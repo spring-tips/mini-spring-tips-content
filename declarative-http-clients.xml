@@ -3,7 +3,7 @@
     <title>Declarative HTTP or RSocket Clients in Spring Boot 3</title>
     <tweet> Want to learn how to build a declarative reactive HTTP or RSocket client with Spring Boot 3?</tweet>
     <code>
-<![CDATA[>
+<![CDATA[
 
 // 1. this is how you start a class
 class BatikSvgTranscoder implements SvgTranscoder {
