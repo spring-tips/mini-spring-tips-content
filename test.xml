@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <tip>
-    <title>A Simple Tip </title>
+    <title>A Simple Tip! </title>
     <uid> simple-tip-2</uid>
     <tweet> 
     This is an example of a title.
@@ -8,7 +8,7 @@
     <code>
 <![CDATA[
 
-// 1. let's go
+// 1. another one
 class Test {
     
  void save() { }
