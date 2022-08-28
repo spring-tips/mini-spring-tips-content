@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title>A Simple Tip </title>
+    <tweet> 
+    This is an example of a title.
+    </tweet>
+    <code>
+<![CDATA[
+
+// 1. this is how you start a class
+class Test {
+    
+    public void save() {
+        synchronized (this.monitor) {
+            var input = new TranscoderInput(inputStream);
+            var output = new TranscoderOutput(outputStream);
+            this.transcoder.transcode(input, output);
+        }
+    }
+}
+
+]]>
+    </code>
+</tip>
