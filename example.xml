@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title> 
+         Another tip
+    </title>
+    <tweet> 
+ Another title
+    </tweet>
+    <code>
+<![CDATA[
+
+// 1. let's go
+class KhalidTips {
+    
+ void anotherOne() { }
+}
+
+]]>
+    </code>
+</tip>
