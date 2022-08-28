@@ -7,7 +7,7 @@
     <code>
 <![CDATA[
 
-// 1. this is how you start a class
+// 1. let's go
 class Test {
     
     public void save() {
