@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <tip>
     <title> 
-         Another tip, check it out!
+        this is a test of the image broadcasting system. 
     </title>
     <uid>  images-in-tweets-test-1 </uid>
     <tweet> 
-       What happens if i include images, like this cute picture of a cat? https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg
+      cute picture of a cat? https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg
     </tweet>
     <code>
 <![CDATA[
