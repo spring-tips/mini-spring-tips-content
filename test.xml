@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <tip>
     <title>A Simple Tip </title>
+    <uid> simple-tip-2</uid>
     <tweet> 
     This is an example of a title.
     </tweet>
