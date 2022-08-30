@@ -3,17 +3,14 @@
     <title> 
         this is a test of the image broadcasting system. 
     </title>
-    <uid>  images-in-tweets-test-1 </uid>
-    <tweet> 
-      zhi shi yi ge image de xiao mao de hen hao!!
-    </tweet>
+    <uid>img-1-please</uid>
+    <tweet>c'mon, images. please, let's work? https://api.joshlong.com/media/josh-0.png</tweet>
     <code>
 <![CDATA[
 
-// 1. let's go
-class KhalidTips {
-    
- void anotherOne() { }
+// 1. why won't this work?
+class TwitterOAuthIsBroken {
+ void badly() { }
 }
 
 ]]>
