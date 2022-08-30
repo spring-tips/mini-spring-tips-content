@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <tip>
     <title> 
-        this is a test of the image broadcasting system. 
+        a cat test
     </title>
-    <uid>img-1-please</uid>
-    <tweet>c'mon, images. please, let's work? https://api.joshlong.com/media/josh-0.png</tweet>
+    <uid>cat-1-please</uid>
+    <tweet>
+cats are cool       
+https://upload.wikimedia.org/wikipedia/commons/1/14/Gatto_europeo4.jpg
+    </tweet>
     <code>
 <![CDATA[
 
 // 1. why won't this work?
 class TwitterOAuthIsBroken {
+
  void badly() { }
 }
 
