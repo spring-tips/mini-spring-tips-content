@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title> 
+        a test of a new image 
+    </title>
+    <uid>test-232</uid>
+    <tweet>
+ this is some text that'll live next to an auto-generated image, i hope.
+    </tweet>
+    <code>
+<![CDATA[
+
+// 1. would this work?
+class TwitterOAuthIsBroken {
+ 
+ private final Map<String, Customer> customers = new ConcurrentHashMap<>(); 
+  
+ // go
+ void boldly() { }
+ 
+ // boldly
+ void go(){}
+ 
+
+ 
+}
+
+]]>
+    </code>
+</tip>
