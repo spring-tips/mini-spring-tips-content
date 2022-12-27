@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title>   
+    Give the Spring Boot 3 AOT engine a "hint"
+    </title>
+    <uid>2022-12-25</uid>
+    <tweet>So you've decided to take the plunge and use the new @SpringBoot 3 AOT engine, but you've got one class that seems evade detection and blows up at runtime. What to do?
+    </tweet>
+    <code>
+<![CDATA[
+
+// suppose you have this cat  
+record Cat (String name){}
+
+// for the reflection scenario, you've got two options 
+@Configuration 
+@RegisterReflectionForBinding(Cat.class)
+class MyConfig { }
+
+// or you can create a RuntimeHintsRegistrar
+class Hints implements RuntimeHintsRegistrar {
+    
+    @Override
+    public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
+        hints.reflection()
+           .registerType(Cat.class, MemberCategory.values())
+    }
+}
+
+@Configuration 
+@ImportRuntimeHints(MyHints.class)
+class MyConfig {}
+
+// the RuntimeHintsRegistrar is also a great way to contribute 'hints' about JNI, resource loading, proxies, etc.
+
+]]>
+    </code>
+</tip>
