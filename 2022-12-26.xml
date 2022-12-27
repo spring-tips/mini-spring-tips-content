@@ -10,7 +10,8 @@
 
     // the secret is the postgresql-backed channel and subscriber
     @Bean
-    PostgresSubscribableChannel channel(PostgresChannelMessageTableSubscriber s, JdbcChannelMessageStore ms) {
+    PostgresSubscribableChannel channel(PostgresChannelMessageTableSubscriber s, 
+    JdbcChannelMessageStore ms) {
         return new PostgresSubscribableChannel(ms, "mygroup", s);
     }
 
