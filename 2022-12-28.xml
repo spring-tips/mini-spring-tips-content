@@ -8,14 +8,13 @@
     </tweet>
     <code>
 <![CDATA[
-
-// suppose you have this cat  
+// suppose you have this Cat type
 record Cat (String name){}
 
 // for the reflection scenario, you've got two options 
 @Configuration 
 @RegisterReflectionForBinding(Cat.class)
-class MyConfig { }
+class MyConfig {}
 
 // or you can create a RuntimeHintsRegistrar
 class Hints implements RuntimeHintsRegistrar {
@@ -31,8 +30,8 @@ class Hints implements RuntimeHintsRegistrar {
 @ImportRuntimeHints(MyHints.class)
 class MyConfig {}
 
-// the RuntimeHintsRegistrar is also a great way to contribute 'hints' about JNI, resource loading, proxies, etc.
-
+// the RuntimeHintsRegistrar is also a great way to contribute 'hints' 
+// about JNI, resource loading, proxies, etc.
 ]]>
     </code>
 </tip>
