@@ -34,6 +34,5 @@
             channel.subscribe(m -> System.out.println(m.getPayload()));
         };
     }
-]]>
-    </code>
+]]></code>
 </tip>
