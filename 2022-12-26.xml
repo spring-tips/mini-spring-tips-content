@@ -7,7 +7,6 @@
     <tweet>The accepted wisdom is that message brokers are for ephemeral messaging and databases for persistent state. But Kafka is a DB, and these days many databases support messaging! Here's how to use Spring Integration and PostgreSQL's NOTIFY semantics. HT rafaelcodes</tweet>
     <code>
 <![CDATA[
-
     // the secret is the postgresql-backed channel and subscriber
     @Bean
     PostgresSubscribableChannel channel(PostgresChannelMessageTableSubscriber s, 
