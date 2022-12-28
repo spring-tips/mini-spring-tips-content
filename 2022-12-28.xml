@@ -3,7 +3,7 @@
     <title>   
     Give the Spring Boot 3 AOT engine a "hint"
     </title>
-    <uid>2022-12-25</uid>
+    <uid>2022-12-28</uid>
     <tweet>So you've decided to take the plunge and use the new @SpringBoot 3 AOT engine, but you've got one class that seems evade detection and blows up at runtime. What to do?
     </tweet>
     <code>
