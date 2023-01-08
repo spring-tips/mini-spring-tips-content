@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title>   
+ Take control of your team's formatting!
+    </title>
+    <uid>2023-01-08</uid>
+    <tweet>
+“Tabs!"
+
+"Spaces!" 
+
+You're both wrong! Let's take a page from the Python and Go communities and relinquish the idea that your particular way with white space is valuable: use the Spring Java Formatter build plugin.
+    </tweet>
+    <code>
+<![CDATA[
+// add the plugin to your Gradle build...
+plugins {
+    id 'io.spring.javaformat' version '0.0.27'
+}
+
+// run with: ./gradlew format 
+
+// or to your Maven build...
+<build>
+<plugins>
+<plugin>
+<groupId>io.spring.javaformat</groupId>
+<artifactId>spring-javaformat-maven-plugin</artifactId>
+<version>0.0.35</version>
+<executions>
+	<execution>
+		<phase>validate</phase><inherited>true</inherited>
+		<goals><goal>validate</goal></goals>
+	</execution>
+</executions>
+</plugin>
+</plugins>
+</build>
+
+// run with ./mvnw spring-javaformat:apply
+
+]]>
+    </code>
+</tip>
