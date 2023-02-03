@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tip>
+    <title> 
+ A Spring Boot Actuator endpoint to surface the classpath of your application.       
+     </title>
+    <uid>2023-02-02</uid>
+    <tweet>   You ever wonder against which dependencies your Spring Boot application is running? 
+        Wonder no more with this custom @SpringBoot Actuator endpoint.
+     </tweet>
+    <code>
+<![CDATA[
+    
+    // add dependencies to your Maven or Gradle build:
+    implementation("org.springframework.boot:spring-boot-starter-actuator")
+    implementation("com.joshlong:dependencies-actuator-spring-boot-starter:0.0.7")
+
+    // you'll also need to add a supported HTTP engine, e.g.:
+    implementation("org.springframework.boot:spring-boot-starter-web")
+
+    // in application.properties, expose the dependencies endpoint if required
+    management.endpoints.web.exposure.include=dependencies
+
+    // then inspect the results 
+    curl http://localhost:8080/actuator/dependencies
+
+    // this won't work in a GraalVM native image OOTB, without extra config:
+    // https://github.com/joshlong/dependencies-actuator-spring-boot-starter
+
+
+]]></code>
+</tip>
