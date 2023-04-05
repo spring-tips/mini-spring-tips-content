@@ -17,7 +17,7 @@ record Cat (String name){}
 class MyConfig {}
 
 // or you can create a RuntimeHintsRegistrar
-class Hints implements RuntimeHintsRegistrar {
+class MyHints implements RuntimeHintsRegistrar {
     
     @Override
     public void registerHints(RuntimeHints hints, ClassLoader classLoader) {
